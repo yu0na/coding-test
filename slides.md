@@ -58,11 +58,15 @@ transition: slide-up
 src: ./pages/purpose.md
 ---
 ---
-transition: slide-up
 src: ./pages/skills.md
 ---
 ---
+transition: slide-up
 src: ./pages/requirements_widget.md
+---
+---
+transition: slide-up
+src: ./pages/requirements_sort.md
 ---
 ---
 transition: slide-up
