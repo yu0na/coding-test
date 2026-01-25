@@ -84,8 +84,22 @@ transition: slide-up
 src: ./pages/api.md
 ---
 ---
-transition: slide-up
 src: ./pages/api_endpoints.md
+---
+---
+transition: slide-up
+src: ./pages/api_guide_pagination.md
+---
+---
+transition: slide-up
+src: ./pages/api_guide_sort.md
+---
+---
+transition: slide-up
+src: ./pages/api_guide_filter.md
+---
+---
+src: ./pages/api_guide_combination.md
 ---
 ---
 layout: two-cols
