@@ -54,8 +54,14 @@ h1 {
 
 
 ---
-transition: fade-out
+transition: slide-up
 src: ./pages/purpose.md
+
+---
+---
+transition: slide-up
+src: ./pages/skills.md
+
 
 ---
 transition: slide-up
