@@ -56,13 +56,14 @@ h1 {
 ---
 transition: slide-up
 src: ./pages/purpose.md
-
 ---
 ---
 transition: slide-up
 src: ./pages/skills.md
-
-
+---
+---
+src: ./pages/requirements_widget.md
+---
 ---
 transition: slide-up
 level: 2
