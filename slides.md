@@ -102,6 +102,9 @@ src: ./pages/api_guide_filter.md
 src: ./pages/api_guide_combination.md
 ---
 ---
+src: ./pages/result.md
+---
+---
 layout: two-cols
 layoutClass: gap-16
 
