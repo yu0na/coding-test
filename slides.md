@@ -74,6 +74,10 @@ src: ./pages/requirements_scroll.md
 ---
 ---
 transition: slide-up
+src: ./pages/requirements_filter.md
+---
+---
+transition: slide-up
 level: 2
 
 ---
