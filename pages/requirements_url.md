@@ -10,6 +10,7 @@ layoutClass: gap-8
 
 <TablePreview
   :showUrlBar="true"
+  :highlightFilter="true"
   urlParams="?sort=name&dir=desc&filter=last_week"
   highlightSort="name"
   sortDirection="desc"
