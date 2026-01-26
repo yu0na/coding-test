@@ -1,15 +1,46 @@
+---
+layout: two-cols
+layoutClass: gap-8
+---
+
 # 구현 요구사항
 ### 정렬 (필수)
 
+<br/>
+
+<TablePreview
+  highlightSort="name"
+  sortDirection="desc"
+/>
+
+::right::
+
+<div class="requirements-content">
+
 정렬 기능은 아래 규칙을 모두 만족해야 합니다.
-- 기본 정렬
+
+- **기본 정렬**
     - 최초 진입 시, 테이블은 <strong>`name` 컬럼 기준 내림차순 정렬</strong> 상태여야 합니다.
 
-- 정렬 인터랙션
+- **정렬 인터랙션**
     - 현재 정렬이 적용된 컬럼을 클릭할 경우 <strong>내림차순 ↔ 오름차순</strong>으로 정렬 방향이 전환되어야 합니다.
     - 다른 컬럼을 클릭할 경우 기존 정렬은 해제되고 클릭한 컬럼 기준으로 <strong>내림차순 정렬</strong>이 적용되어야 합니다.
 
-- 정렬 UI
+- **정렬 UI**
     - 정렬이 활성화된 컬럼은 <strong>시각적으로 강조</strong>되어야 합니다.
     - 오름차순 / 내림차순 상태를 나타내는 <strong>화살표 UI</strong>가 표시되어야 합니다.
+
+</div>
+
+<style>
+.requirements-content {
+  font-size: 0.85em;
+}
+
+.requirements-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  color: #4EC5D4;
+}
+</style>
 

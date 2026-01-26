@@ -1,15 +1,53 @@
+---
+layout: two-cols
+layoutClass: gap-8
+---
+
 # 구현 요구사항
 ### URL State Sync (필수)
 
+<br/>
+
+<TablePreview
+  :showUrlBar="true"
+  urlParams="?sort=name&dir=desc&filter=last_week"
+  highlightSort="name"
+  sortDirection="desc"
+/>
+
+::right::
+
+<div class="requirements-content">
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 정렬 및 필터 상태는 <strong>URL과 동기화</strong>되어야 합니다.
-- 페이지 최초 진입 시: 
+
+- **페이지 최초 진입 시:**
     - URL에 포함된 상태 값을 읽어 테이블의 정렬 및 필터 상태에 적용해야 합니다.
-- 정렬 또는 필터 상태가 변경될 경우: 
+- **정렬 또는 필터 상태가 변경될 경우:**
     - URL 상태도 함께 갱신되어야 합니다.
-- 유효하지 않은 URL 파라미터가 전달된 경우: 
+- **유효하지 않은 URL 파라미터가 전달된 경우:**
     - 해당 값은 무시하고 기본 상태로 처리해야 합니다.
 
 <br/>
 
 - URL을 통해 <strong>현재 테이블 상태를 공유</strong>할 수 있어야 합니다.
-- 브라우저 <strong>뒤로가기 / 앞으로가기</strong> 동작이 정상적으로 동작해야 합니다.    
+- 브라우저 <strong>뒤로가기 / 앞으로가기</strong> 동작이 정상적으로 동작해야 합니다.
+
+</div>
+
+<style>
+.requirements-content {
+  font-size: 0.85em;
+}
+
+.requirements-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  color: #4EC5D4;
+}
+</style>    

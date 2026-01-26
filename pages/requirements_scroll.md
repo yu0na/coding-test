@@ -1,6 +1,25 @@
+---
+layout: two-cols
+layoutClass: gap-8
+---
+
 # 구현 요구사항
 ### Infinite Scroll (필수)
 
+<br/>
+
+<TablePreview
+  :highlightScroll="true"
+/>
+
+::right::
+
+<div class="requirements-content">
+
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 
 - 테이블에는 <strong>기본적으로 10개의 아이템</strong>이 표시되어야 합니다.
@@ -10,3 +29,17 @@
 - 세로 스크롤을 통해 <strong>Infinite Scroll</strong>을 구현합니다.
 
 - 스크롤이 하단에 도달하면 <strong>다음 10개의 아이템을 추가로 로드</strong>해야 합니다.
+
+</div>
+
+<style>
+.requirements-content {
+  font-size: 0.85em;
+}
+
+.requirements-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  color: #4EC5D4;
+}
+</style>
