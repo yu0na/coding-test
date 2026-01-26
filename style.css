@@ -1,0 +1,13 @@
+h1,
+h3 {
+  color: var(--purple);
+}
+
+strong {
+  color: var(--orange);
+}
+
+code {
+  background-color: transparent !important;
+  color: var(--green);
+}

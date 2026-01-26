@@ -4,7 +4,7 @@ theme: dracula
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: Adriel Coding Test
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
