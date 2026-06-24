@@ -1,0 +1,21 @@
+name: Deploy Notify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify deployment result
+        run: |
+          curl -X POST ${{ secrets.PIPEDREAM_DEPLOY_WEBHOOK_URL }} \
+            -H "Content-Type: application/json" \
+            -d '{
+              "status": "success",
+              "repo": "${{ github.repository }}",
+              "actor": "${{ github.actor }}",
+              "pr_number": "${{ github.event.pull_request.number }}"
+            }'
