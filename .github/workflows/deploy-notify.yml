@@ -22,8 +22,8 @@ jobs:
               break
             fi
             sleep 3
-            done
-            echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          done
+          echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
 
       - name: Notify deployment result
         run: |
