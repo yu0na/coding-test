@@ -12,10 +12,17 @@ jobs:
       - name: Notify deployment result
         if: always()
         run: |
-          PR_NUMBER=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" \
-            -H "Accept: application/vnd.github+json" \
-            | jq -r '.[0].number')
+          for i in 1 2 3; do
+            PR_NUMBER=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}/pulls" \
+              -H "Accept: application/vnd.github+json" \
+              | jq -r '.[0].number')
+            echo "Attempt $i: PR_NUMBER=$PR_NUMBER"
+            if [ "$PR_NUMBER" != "null" ] && [ -n "$PR_NUMBER" ]; then
+              break
+            fi
+            sleep 3
+          done
 
           curl -X POST ${{ secrets.PIPEDREAM_DEPLOY_WEBHOOK_URL }} \
             -H "Content-Type: application/json" \
