@@ -17,6 +17,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             | jq -r '.[0].number')
           echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
 
       - name: Notify deployment result
         run: |
